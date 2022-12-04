@@ -14,15 +14,15 @@ const goals = [
     words: "Spend more quality time with mom.",
     priority: 2,
     imageURL:
-      "https://media.istockphoto.com/id/1153377026/vector/happy-parents-with-children-playing-game-at-home.jpg?s=612x612&w=0&k=20&c=AW3n5KyhRAjWmExAizIzwpj1-Soy2RnsggOavWqzRKA=",
+      "https://media.istockphoto.com/id/1153633559/vector/faceless-family-resting-at-home-idyllic-cartoon.jpg?s=612x612&w=0&k=20&c=C71oUz7cDQnziyS0ci6rjiVxJBoTlv4juy8Gq-r4-c8=",
   },
   {
     id: 3,
-    goal: "Do the things which I love more.",
-    words: "Gardening.",
+    goal: "Travel more",
+    words: "Atleast 2 family vacation in a year.",
     priority: 3,
     imageURL:
-      "https://media.istockphoto.com/id/1371025283/vector/family-caring-for-plants-in-garden-flat-vector-illustration.jpg?s=612x612&w=0&k=20&c=xbDN1b-B9LHbmHKK-UFHfrKJMjsV9-rqPaA5JnuWVkA=",
+      "https://media.istockphoto.com/id/1205908639/vector/family-home-and-vacation-activities-vectors-set.jpg?s=612x612&w=0&k=20&c=ExDocnCZfoF9GfGbl_HDgQrLEdqO1L-J_lxWgM3Algk=",
   },
 ];
 let globalId = 4;
