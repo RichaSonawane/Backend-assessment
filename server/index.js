@@ -19,7 +19,7 @@ const {
 
 app.get("/api/compliment", getCompliment);
 app.get("/api/fortune", getFortune);
-app.get("/api/horoscope", getHoroscope)
+app.get("/api/horoscope", getHoroscope);
 //for vision board
 app.get(`/api/goals`, getGoals);
 app.delete(`/api/goals/:id`, deleteGoals);

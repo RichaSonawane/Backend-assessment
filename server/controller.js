@@ -18,7 +18,7 @@ const goals = [
   },
   {
     id: 3,
-    goal: "Travel more",
+    goal: "Travel more,Enjoy more.",
     words: "Atleast 2 family vacation in a year.",
     priority: 3,
     imageURL:
@@ -86,14 +86,15 @@ module.exports = {
     let { id } = req.params;
     let { type } = req.body;
     let index = goals.findIndex((elem) => +elem.id === +id);
-    if (goals[index].priority <= 10 && type === "minus") {
-      goals[index].priority = 0;
-      res.status(200).send(goals);
+    if (goals[index].priority === 10 && type === "plus") {
+      res.status(400).send("cannot go above 10");
+    } else if (goals[index].priority === 0 && type === "minus") {
+      res.status(400).send("cannot go below 0");
     } else if (type === "plus") {
-      goals[index].priority += 1;
+      goals[index].priority++;
       res.status(200).send(goals);
     } else if (type === "minus") {
-      goals[index].priority -= 1;
+      goals[index].priority--;
       res.status(200).send(goals);
     } else {
       res.sendStatus(400);

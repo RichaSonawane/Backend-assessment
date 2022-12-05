@@ -9,27 +9,36 @@
     <button id="fortuneButton">Get Fortune</button>
     <button id="signsButton">Check Horoscope</button>
     <div class="horoscope"></div>
-    <form>
-      <h2>Create your vision board for 2023</h2>
-      <input type="text" id="goals" placeholder="What is your goal?" />
-      <input type="text" id="words" placeholder="Word of encouragement" />
-      <label for="priority">Choose priority level:</label>
-      <select id="priority" name="priority">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-      </select>
-      <input type="text" id="img" placeholder="Paste an inspiring image URL" />
-      <button>Add more</button>
-    </form>
+    <section id="visionBoard">
+      <form>
+        <h2>Create your vision board for 2023</h2>
+        <input type="text" id="goals" placeholder="What is your goal?" />
+        <input type="text" id="words" placeholder="Word of encouragement" />
+        <section id="priority-container">
+          <label for="priority">Choose priority level:</label>
+          <select id="priority" name="priority">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </section>
+        <input
+          type="text"
+          id="img"
+          placeholder="Paste an inspiring image URL"
+        />
+        <button>Add</button>
+      </form>
+    </section>
     <section id="goals-container"></section>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
   </body>
