@@ -113,13 +113,14 @@ function displayGoals(arr) {
   for (let i = 0; i < arr.length; i++) {
     createGoalCard(arr[i]);
   }
+  goalContainer.innerHTML += goalCard;
 }
 
 complimentBtn.addEventListener("click", getCompliment);
 //event listener and handler
 fortuneBtn.addEventListener("click", getFortune);
 horoscopeBtn.addEventListener("click", getHoroscope);
-//fot goals
+//fot goal do this
 form.addEventListener("submit", submitHandler);
 
 getAllGoals();
